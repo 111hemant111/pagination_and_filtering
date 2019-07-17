@@ -74,6 +74,7 @@ function appendPageLinks (list)
         }
 }
 
+/**** Creates search bar, updates the page with search results and page number links ****/
 function createSearchBar (list)
 {
     //Creating elements for search bar
@@ -120,9 +121,8 @@ function createSearchBar (list)
                 else
                     currentListItem.style.display = 'none';
             }
-        //NodeList of all the matched list items
-        const resultList = document.querySelectorAll('.student-item:not([style*="display:none"]):not([style*="display: none"])');
-        console.log(resultList);
+        
+        const resultList = document.querySelectorAll('.student-item:not([style*="display:none"]):not([style*="display: none"])');  //NodeList of all the matched list items
         if (h3.style.display !== 'block') //No pagination on Error message --> Don't try to remove pagination again
             {
                 (document.querySelector('.page')).removeChild(document.querySelector('.pagination'));
