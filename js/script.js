@@ -1,7 +1,9 @@
 /******************************************
        List Filter and Pagination
 ******************************************/
-   
+/*jshint esversion: 6*/
+/* eslint-env browser*/
+
 let activePage = 1; //Page that's active
 const parentDiv = document.querySelector('.page'); //Parent of heading, search bar, lists &c.
 const list = document.querySelectorAll('.student-list li'); //List of all students
